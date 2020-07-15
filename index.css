@@ -1,0 +1,1625 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 25px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.banner__card__hideless1024px{
+    display: block;
+}
+
+
+@media only screen and (min-width: 320px){
+    .nav {
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+    }
+    
+    .nav--absolute{
+        position: absolute;
+    }
+    
+    .nav__about{
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+        height: 100%;
+        padding: 0 1rem;
+        margin-left: 1rem;
+        color: white;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    
+    .nav__about__a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .nav__about__a--hover:hover{
+        color: black;
+        cursor: pointer;
+    }
+    
+    .banner {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-flow: row wrap;
+        overflow: hidden;
+    }
+    
+    .banner__card {
+        width: 50%;
+        background: red;
+        object-fit: cover;
+    }
+    .banner__card__hideless1024px{
+        display: block;
+    }
+    .banner__title{
+        text-align: center;
+        margin-top: 28vh;
+        font-family: 'Grenze Gotisch', cursive;
+        font-size: 3.5rem;
+        width: 100%;
+        text-shadow: 0 0 0.5rem black;
+    }
+
+    .banner__title--white{
+        color: white;
+    }
+    
+    .banner__title--absolute {
+        position: absolute;
+    }
+    
+    .adopt {
+        margin-top: 0.6rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .adopt__select{
+        width: 100%;
+        height: 90%;
+        margin: 0 0.5rem;
+    }
+    
+    .adopt__select__wrapper{
+        width: 100%;
+        height: 25%;
+        position: relative;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    
+    .adopt__select__wrapper__banner{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .adopt__select__wrapper__text{
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+        position: absolute;
+        margin-top: -3.5rem;
+        color: rgb(41, 76, 151);
+        text-shadow: 0 0 3px white;
+    }
+    
+    .adopt__select__title{
+        text-align: center;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    
+    .adopt__select_button{
+        font-family: 'Grenze Gotisch', cursive;
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.3rem 0;
+        margin: 0.25rem 0;
+        font-weight: lighter;
+        border: 2px solid rgb(63, 141, 172);
+        background: white;
+        text-align: left;
+        text-indent: 0.3rem;
+        border-radius: 0.5rem;
+    }
+    
+    .adopt__select_button:hover{
+        cursor: pointer;
+        background: rgb(224, 133, 133);
+        color: white;
+        border: 2px solid rgb(63, 141, 172);
+    }
+    
+    .adopt__result{
+        width: 35rem;
+        height: 45rem;
+        margin: 0 0.5rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        overflow: auto;
+        border-top: 5px solid red;
+        border-left: 5px solid red;
+    }
+    
+    .adopt__result__picture{
+        width: 90%;
+        height: 8rem;
+        margin: 0.5rem 0 0.5rem;
+        border: 5px solid rgb(67, 182, 163);
+    }
+    
+    .mixup {
+        width: 100%;
+        height: 39rem;
+        display: flex;
+        flex-flow: row wrap;
+        overflow: hidden;
+        margin-top: 2rem;
+    }
+    
+    .mixup__picture{
+        width: 33.33%;
+        height: 10%;
+        object-fit: cover;
+    }
+    
+    .mixup__wrapper{
+        position: absolute;
+        width: 100%;
+        height: 7rem;
+        margin-top: 16.5rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    
+    .mixup__wrapper__adoptline{
+        font-size: 2rem;
+        color: white;
+        text-shadow: 0 0 5px black;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    
+    .mixup__wrapper__a {
+        height: 40%;
+        height: 40%;
+        font-size: 1.2rem;
+        padding: 0.3rem 1rem;
+        font-family: 'Grenze Gotisch', cursive;
+        box-shadow: 0 0 5px black;
+        text-decoration: none;
+        color: black;
+        border: 3px solid white;
+        background-color: rgb(66, 179, 66);
+        color: white;
+    }
+    
+    .wave{
+        margin-top: 10rem;
+        width: 100%;
+        height: 5rem;
+    }
+    
+    .wave__path{
+        stroke: peru;
+        stroke-width: 0.1rem;
+        fill: peru;
+    }
+    
+    .about {
+        margin-top: -0.5rem;
+        background: peru;
+        color: white;
+        width: 100%;
+        height: 18rem;
+        font-size: 1.3rem;
+        padding-left: 0.5rem;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    
+    .about__creator{
+        padding-top: 0.5rem;
+        font-size: 1rem;
+    }
+    
+    .about__say{
+        font-size: 1rem;
+    }
+    
+    .about__findme{
+        font-size: 1rem;
+    }
+    
+    .about__social__a {
+        color: white;
+        text-decoration: none;
+        margin-left: 0.5rem;
+    }
+    
+    .about__social__a__icons{
+        font-size: 3rem;
+        margin-left : -0.4rem;
+    }
+    
+    .about__social__a__icons--hover{
+        transition: all 1s ease;
+    }
+    
+    .about__social__a__icons--hover:hover{
+        transform: rotate(-10deg);
+    }
+    
+    .about__resource{
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    
+    .about__api{
+        font-size: .9rem;
+    }
+    
+    .about__image{
+        font-size: .9rem;
+    }
+}
+@media only screen and (min-width: 400px){
+    .nav {
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+    }
+    
+    .nav--absolute{
+        position: absolute;
+    }
+    
+    .nav__about{
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+        height: 100%;
+        padding: 0 1rem;
+        margin-left: 1rem;
+        color: white;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    
+    .nav__about__a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .nav__about__a--hover:hover{
+        color: black;
+        cursor: pointer;
+    }
+    
+    .banner {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-flow: row wrap;
+        overflow: hidden;
+    }
+    
+    .banner__card {
+        width: 50%;
+        background: red;
+        object-fit: cover;
+    }
+    .banner__card__hideless1024px{
+        display: block;
+    }
+    .banner__title{
+        text-align: center;
+        margin-top: 36vh;
+        font-family: 'Grenze Gotisch', cursive;
+        font-size: 3.5rem;
+        width: 100%;
+        text-shadow: 0 0 0.5rem black;
+    }
+
+    .banner__title--white{
+        color: white;
+    }
+    
+    .banner__title--absolute {
+        position: absolute;
+    }
+    
+    .adopt {
+        margin-top: 0.6rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .adopt__select{
+        width: 100%;
+        height: 90%;
+        margin: 0 0.5rem;
+    }
+    
+    .adopt__select__wrapper{
+        width: 100%;
+        height: 25%;
+        position: relative;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    
+    .adopt__select__wrapper__banner{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .adopt__select__wrapper__text{
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+        position: absolute;
+        margin-top: -3.5rem;
+        color: rgb(41, 76, 151);
+        text-shadow: 0 0 3px white;
+    }
+    
+    .adopt__select__title{
+        text-align: center;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    
+    .adopt__select_button{
+        font-family: 'Grenze Gotisch', cursive;
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.3rem 0;
+        margin: 0.25rem 0;
+        font-weight: lighter;
+        border: 2px solid rgb(63, 141, 172);
+        background: white;
+        text-align: left;
+        text-indent: 0.3rem;
+        border-radius: 0.5rem;
+    }
+    
+    .adopt__select_button:hover{
+        cursor: pointer;
+        background: rgb(224, 133, 133);
+        color: white;
+        border: 2px solid rgb(63, 141, 172);
+    }
+    
+    .adopt__result{
+        width: 35rem;
+        height: 45rem;
+        margin: 0 0.5rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        overflow: auto;
+        border-top: 5px solid red;
+        border-left: 5px solid red;
+    }
+    
+    .adopt__result__picture{
+        width: 90%;
+        height: 10rem;
+        margin: 0.5rem 0 0.5rem;
+        border: 5px solid rgb(67, 182, 163);
+    }
+    
+    .mixup {
+        width: 100%;
+        height: 39rem;
+        display: flex;
+        flex-flow: row wrap;
+        overflow: hidden;
+        margin-top: 2rem;
+    }
+    
+    .mixup__picture{
+        width: 33.33%;
+        height: 10%;
+        object-fit: cover;
+    }
+    
+    .mixup__wrapper{
+        position: absolute;
+        width: 100%;
+        height: 7rem;
+        margin-top: 16.5rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    
+    .mixup__wrapper__adoptline{
+        font-size: 2rem;
+        color: white;
+        text-shadow: 0 0 5px black;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+   
+    .mixup__wrapper__a {
+        height: 40%;
+        height: 40%;
+        font-size: 1.2rem;
+        padding: 0.3rem 1rem;
+        font-family: 'Grenze Gotisch', cursive;
+        box-shadow: 0 0 5px black;
+        text-decoration: none;
+        color: black;
+        border: 3px solid white;
+        background-color: rgb(66, 179, 66);
+        color: white;
+    }
+    
+    .wave{
+        margin-top: 10rem;
+        width: 100%;
+        height: 5rem;
+    }
+    
+    .wave__path{
+        stroke: peru;
+        stroke-width: 0.1rem;
+        fill: peru;
+    }
+    
+    .about {
+        margin-top: -0.5rem;
+        background: peru;
+        color: white;
+        width: 100%;
+        height: 18rem;
+        font-size: 1.3rem;
+        padding-left: 0.5rem;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    
+    .about__creator{
+        padding-top: 0.5rem;
+        font-size: 1rem;
+    }
+    
+    .about__say{
+        font-size: 1rem;
+    }
+    
+    .about__findme{
+        font-size: 1rem;
+    }
+    
+    .about__social__a {
+        color: white;
+        text-decoration: none;
+        margin-left: 0.5rem;
+    }
+    
+    .about__social__a__icons{
+        font-size: 3rem;
+        margin-left : -0.4rem;
+    }
+    
+    .about__social__a__icons--hover{
+        transition: all 1s ease;
+    }
+    
+    .about__social__a__icons--hover:hover{
+        transform: rotate(-10deg);
+    }
+    
+    .about__resource{
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    
+    .about__api{
+        font-size: .9rem;
+    }
+    
+    .about__image{
+        font-size: .9rem;
+    }
+}
+@media only screen and (min-width: 500px){
+    .nav {
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+    }
+    
+    .nav--absolute{
+        position: absolute;
+    }
+    
+    .nav__about{
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+        height: 100%;
+        padding: 0 1rem;
+        margin-left: 1rem;
+        color: white;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    
+    .nav__about__a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .nav__about__a--hover:hover{
+        color: black;
+        cursor: pointer;
+    }
+    
+    .banner {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-flow: row wrap;
+        overflow: hidden;
+    }
+    
+    .banner__card {
+        width: 50%;
+        background: red;
+        object-fit: cover;
+    }
+    .banner__card__hideless1024px{
+        display: block;
+    }
+    .banner__title{
+        text-align: center;
+        margin-top: 36vh;
+        font-family: 'Grenze Gotisch', cursive;
+        font-size: 3.5rem;
+        width: 100%;
+        text-shadow: 0 0 0.5rem black;
+    }
+
+    .banner__title--white{
+        color: white;
+    }
+    
+    .banner__title--absolute {
+        position: absolute;
+    }
+    
+    .adopt {
+        margin-top: 0.6rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .adopt__select{
+        width: 100%;
+        height: 90%;
+        margin: 0 0.5rem;
+    }
+    
+    .adopt__select__wrapper{
+        width: 100%;
+        height: 25%;
+        position: relative;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    
+    .adopt__select__wrapper__banner{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .adopt__select__wrapper__text{
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+        position: absolute;
+        margin-top: -3.5rem;
+        color: rgb(41, 76, 151);
+        text-shadow: 0 0 3px white;
+    }
+    
+    .adopt__select__title{
+        text-align: center;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    
+    .adopt__select_button{
+        font-family: 'Grenze Gotisch', cursive;
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.3rem 0;
+        margin: 0.25rem 0;
+        font-weight: lighter;
+        border: 2px solid rgb(63, 141, 172);
+        background: white;
+        text-align: left;
+        text-indent: 0.3rem;
+        border-radius: 0.5rem;
+    }
+    
+    .adopt__select_button:hover{
+        cursor: pointer;
+        background: rgb(224, 133, 133);
+        color: white;
+        border: 2px solid rgb(63, 141, 172);
+    }
+    
+    .adopt__result{
+        width: 35rem;
+        height: 45rem;
+        margin: 0 0.5rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        overflow: auto;
+        border-top: 5px solid red;
+        border-left: 5px solid red;
+    }
+    
+    .adopt__result__picture{
+        width: 48%;
+        height: 10rem;
+        margin: 0.5rem 0 0.5rem;
+        border: 5px solid rgb(67, 182, 163);
+    }
+    
+    .mixup {
+        width: 100%;
+        height: 39rem;
+        display: flex;
+        flex-flow: row wrap;
+        overflow: hidden;
+        margin-top: 2rem;
+    }
+    
+    .mixup__picture{
+        width: 33.33%;
+        height: 10%;
+        object-fit: cover;
+    }
+    
+    .mixup__wrapper{
+        position: absolute;
+        width: 100%;
+        height: 7rem;
+        margin-top: 16.5rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    
+    .mixup__wrapper__adoptline{
+        width: 100%;
+        font-size: 2rem;
+        color: white;
+        text-shadow: 0 0 5px black;
+        font-family: 'Grenze Gotisch', cursive;
+        text-align: center;
+    }
+    
+    .mixup__wrapper__a {
+        height: 40%;
+        height: 40%;
+        font-size: 1.2rem;
+        padding: 0.3rem 1rem;
+        font-family: 'Grenze Gotisch', cursive;
+        box-shadow: 0 0 5px black;
+        text-decoration: none;
+        color: black;
+        border: 3px solid white;
+        background-color: rgb(66, 179, 66);
+        color: white;
+    }
+    
+    .wave{
+        margin-top: 10rem;
+        width: 100%;
+        height: 5rem;
+    }
+    
+    .wave__path{
+        stroke: peru;
+        stroke-width: 0.1rem;
+        fill: peru;
+    }
+    
+    .about {
+        margin-top: -0.5rem;
+        background: peru;
+        color: white;
+        width: 100%;
+        height: 18rem;
+        font-size: 1.3rem;
+        padding-left: 0.5rem;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    
+    .about__creator{
+        padding-top: 0.5rem;
+        font-size: 1rem;
+    }
+    
+    .about__say{
+        font-size: 1rem;
+    }
+    
+    .about__findme{
+        font-size: 1rem;
+    }
+    
+    .about__social__a {
+        color: white;
+        text-decoration: none;
+        margin-left: 0.5rem;
+    }
+    
+    .about__social__a__icons{
+        font-size: 3rem;
+        margin-left : -0.4rem;
+    }
+    
+    .about__social__a__icons--hover{
+        transition: all 1s ease;
+    }
+    
+    .about__social__a__icons--hover:hover{
+        transform: rotate(-10deg);
+    }
+    
+    .about__resource{
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    
+    .about__api{
+        font-size: .9rem;
+    }
+    
+    .about__image{
+        font-size: .9rem;
+    }
+}
+@media only screen and (min-width: 720px){
+    .nav {
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+    }
+    
+    .nav--absolute{
+        position: absolute;
+    }
+    
+    .nav__about{
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+        height: 100%;
+        padding: 0 1rem;
+        margin-left: 1rem;
+        color: white;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    
+    .nav__about__a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .nav__about__a--hover:hover{
+        color: black;
+        cursor: pointer;
+    }
+    
+    .banner {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-flow: row nowrap;
+        overflow: hidden;
+    }
+    
+    .banner__card {
+        width: 33.33%;
+        background: red;
+        object-fit: cover;
+    }
+    .banner__card__hideless1024px{
+        display: none;
+    }
+    .banner__title{
+        text-align: center;
+        margin-top: 50vh;
+        font-family: 'Grenze Gotisch', cursive;
+        font-size: 5rem;
+        width: 100%;
+        text-shadow: 0 0 0.5rem black;
+    }
+
+    .banner__title--white{
+        color: white;
+    }
+    
+    .banner__title--absolute {
+        position: absolute;
+    }
+    
+    .adopt {
+        width: 100%;
+        height: 39rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .adopt__select{
+        width: 10rem;
+        height: 90%;
+        margin: 0 0.5rem;
+    }
+    
+    .adopt__select__wrapper{
+        width: 100%;
+        height: 25%;
+        position: relative;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    
+    .adopt__select__wrapper__banner{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .adopt__select__wrapper__text{
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+        position: absolute;
+        margin-top: -3.5rem;
+        color: rgb(41, 76, 151);
+        text-shadow: 0 0 3px white;
+    }
+    
+    .adopt__select__title{
+        text-align: center;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    
+    .adopt__select_button{
+        font-family: 'Grenze Gotisch', cursive;
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.3rem 0;
+        margin: 0.25rem 0;
+        font-weight: lighter;
+        border: 2px solid rgb(63, 141, 172);
+        background: white;
+        text-align: left;
+        text-indent: 0.3rem;
+        border-radius: 0.5rem;
+    }
+    
+    .adopt__select_button:hover{
+        cursor: pointer;
+        background: rgb(224, 133, 133);
+        color: white;
+        border: 2px solid rgb(63, 141, 172);
+    }
+    
+    .adopt__result{
+        width: 35rem;
+        height: 90%;
+        margin: 0 0.5rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        overflow: auto;
+        border-top: 5px solid red;
+        border-left: 5px solid red;
+    }
+    
+    .adopt__result__picture{
+        width: 45%;
+        height: 8rem;
+        margin: 0.5rem 0 0.5rem;
+        border: 5px solid rgb(67, 182, 163);
+    }
+    
+    .mixup {
+        width: 100%;
+        height: 39rem;
+        display: flex;
+        flex-flow: row wrap;
+        overflow: hidden;
+    }
+    
+    .mixup__picture{
+        width: 25%;
+        height: 15%;
+        object-fit: cover;
+    }
+    
+    .mixup__wrapper{
+        position: absolute;
+        width: 20rem;
+        height: 7rem;
+        margin-top: 16.5rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin-left: 50%;
+        left: -10rem;
+    }
+    
+    .mixup__wrapper__adoptline{
+        font-size: 2rem;
+        color: white;
+        text-shadow: 0 0 5px black;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    
+    .mixup__wrapper__a {
+        height: 40%;
+        height: 40%;
+        font-size: 1.2rem;
+        padding: 0.3rem 1rem;
+        border: 3px solid rgb(180, 63, 63);
+        background: white;
+        font-family: 'Grenze Gotisch', cursive;
+        box-shadow: 0 0 5px black;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .mixup__wrapper__a--hover:hover {
+        cursor: pointer;
+        border: 3px solid white;
+        background-color: rgb(66, 179, 66);
+        color: white;
+    }
+    
+    
+    .wave{
+        margin-top: 10rem;
+        width: 100%;
+        height: 5rem;
+    }
+    
+    .wave__path{
+        stroke: peru;
+        stroke-width: 0.1rem;
+        fill: peru;
+    }
+    
+    .about {
+        margin-top: -0.5rem;
+        background: peru;
+        color: white;
+        width: 100%;
+        height: 15rem;
+        font-size: 1.3rem;
+        text-indent: 0.5rem;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    
+    .about__creator{
+        padding-top: 0.5rem;
+        font-size: 1rem;
+    }
+    
+    .about__say{
+        font-size: 1rem;
+    }
+    
+    .about__findme{
+        font-size: 1rem;
+    }
+    
+    .about__social__a {
+        color: white;
+        text-decoration: none;
+        
+    }
+    
+    .about__social__a__icons{
+        font-size: 3rem;
+        margin-left : -0.4rem;
+    }
+    
+    .about__social__a__icons--hover{
+        transition: all 1s ease;
+    }
+    
+    .about__social__a__icons--hover:hover{
+        transform: rotate(-10deg);
+    }
+    
+    .about__resource{
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    
+    .about__api{
+        font-size: .9rem;
+    }
+    
+    .about__image{
+        font-size: .9rem;
+    }
+}
+@media only screen and (min-width: 1024px){
+    .nav {
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+    }
+    
+    .nav--absolute{
+        position: absolute;
+    }
+    
+    .nav__about{
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+        height: 100%;
+        padding: 0 1rem;
+        margin-left: 1rem;
+        color: white;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    
+    .nav__about__a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .nav__about__a--hover:hover{
+        color: black;
+        cursor: pointer;
+    }
+    
+    .banner {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    
+    .banner__card {
+        width: 25%;
+        background: red;
+        object-fit: cover;
+    }
+    .banner__card__hideless1024px{
+        display: block;
+    }
+    .banner__title{
+        text-align: center;
+        margin-top: 50vh;
+        font-family: 'Grenze Gotisch', cursive;
+        font-size: 5rem;
+        width: 100%;
+        text-shadow: 0 0 0.5rem black;
+    }
+    
+    .banner__title--white{
+        color: white;
+    }
+    
+    .banner__title--absolute {
+        position: absolute;
+    }
+    
+    .adopt {
+        width: 100%;
+        height: 39rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .adopt__select{
+        width: 10rem;
+        height: 90%;
+        margin: 0 0.5rem;
+    }
+    
+    .adopt__select__wrapper{
+        width: 100%;
+        height: 25%;
+        position: relative;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    
+    .adopt__select__wrapper__banner{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .adopt__select__wrapper__text{
+        width: 100%;
+        text-align: center;
+        font-size: .9rem;
+        position: absolute;
+        margin-top: -2rem;
+        color: rgb(41, 76, 151);
+        text-shadow: 0 0 3px white;
+    }
+    
+    .adopt__select__title{
+        text-align: center;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    
+    .adopt__select_button{
+        font-family: 'Grenze Gotisch', cursive;
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.3rem 0;
+        margin: 0.25rem 0;
+        font-weight: lighter;
+        border: 2px solid rgb(63, 141, 172);
+        background: white;
+        text-align: left;
+        text-indent: 1rem;
+        border-radius: 0.5rem;
+    }
+    
+    .adopt__select_button:hover{
+        cursor: pointer;
+        background: rgb(224, 133, 133);
+        color: white;
+        border: 2px solid rgb(63, 141, 172);
+    }
+    
+    .adopt__result{
+        width: 35rem;
+        height: 90%;
+        margin: 0 0.5rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        overflow: auto;
+        border-top: 5px solid red;
+        border-left: 5px solid red;
+    }
+    
+    .adopt__result__picture{
+        width: 30%;
+        height: 10rem;
+        margin: 0.5rem 0 0.5rem;
+        border: 5px solid rgb(67, 182, 163);
+    }
+    
+    .mixup {
+        width: 100%;
+        height: 39rem;
+        display: flex;
+        flex-flow: row wrap;
+        overflow: hidden;
+    }
+    
+    .mixup__picture{
+        width: 20%;
+        height: 20%;
+        object-fit: cover;
+    }
+    
+    .mixup__wrapper{
+        position: absolute;
+        width: 20rem;
+        height: 7rem;
+        margin-top: 16.5rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin-left: 50%;
+        left: -10rem;
+    }
+    
+    .mixup__wrapper__adoptline{
+        font-size: 2rem;
+        color: white;
+        text-shadow: 0 0 5px black;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    
+    .mixup__wrapper__a {
+        height: 40%;
+        height: 40%;
+        font-size: 1.2rem;
+        padding: 0.3rem 1rem;
+        border: 3px solid rgb(180, 63, 63);
+        background: white;
+        font-family: 'Grenze Gotisch', cursive;
+        box-shadow: 0 0 5px black;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .mixup__wrapper__a--hover:hover {
+        cursor: pointer;
+        border: 3px solid white;
+        background-color: rgb(66, 179, 66);
+        color: white;
+    }
+    
+    
+    .wave{
+        margin-top: 10rem;
+        width: 100%;
+        height: 5rem;
+    }
+    
+    .wave__path{
+        stroke: peru;
+        stroke-width: 0.1rem;
+        fill: peru;
+    }
+    
+    .about {
+        margin-top: -0.5rem;
+        background: peru;
+        color: white;
+        width: 100%;
+        height: 15rem;
+        font-size: 1.3rem;
+        text-indent: 0.5rem;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    
+    .about__creator{
+        padding-top: 0.5rem;
+        font-size: 1rem;
+    }
+    
+    .about__say{
+        font-size: 1rem;
+    }
+    
+    .about__findme{
+        font-size: 1rem;
+    }
+    
+    .about__social__a {
+        color: white;
+        text-decoration: none;
+        
+    }
+    
+    .about__social__a__icons{
+        font-size: 3rem;
+        margin-left : -0.4rem;
+    }
+    
+    .about__social__a__icons--hover{
+        transition: all 1s ease;
+    }
+    
+    .about__social__a__icons--hover:hover{
+        transform: rotate(-10deg);
+    }
+    
+    .about__resource{
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    
+    .about__api{
+        font-size: .9rem;
+    }
+    
+    .about__image{
+        font-size: .9rem;
+    }
+}
+@media only screen and (min-width: 1600px){
+    .nav {
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+    }
+    
+    .nav--absolute{
+        position: absolute;
+    }
+    
+    .nav__about{
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+        height: 100%;
+        padding: 0 1rem;
+        margin-left: 1rem;
+        color: white;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    
+    .nav__about__a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .nav__about__a--hover:hover{
+        color: black;
+        cursor: pointer;
+    }
+    
+    .banner {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    
+    .banner__card {
+        width: 25%;
+        background: red;
+        object-fit: cover;
+    }
+    .banner__card__hideless1024px{
+        display: block;
+    }
+    .banner__title{
+        text-align: center;
+        margin-top: 50vh;
+        font-family: 'Grenze Gotisch', cursive;
+        font-size: 5rem;
+        width: 100%;
+        text-shadow: 0 0 0.5rem black;
+    }
+    
+    .banner__title--white{
+        color: white;
+    }
+    
+    .banner__title--absolute {
+        position: absolute;
+    }
+    
+    .adopt {
+        width: 100%;
+        height: 39rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .adopt__select{
+        width: 10rem;
+        height: 90%;
+        margin: 0 0.5rem;
+    }
+    
+    .adopt__select__wrapper{
+        width: 100%;
+        height: 25%;
+        position: relative;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    
+    .adopt__select__wrapper__banner{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .adopt__select__wrapper__text{
+        width: 100%;
+        text-align: center;
+        font-size: .9rem;
+        position: absolute;
+        margin-top: -2rem;
+        color: rgb(41, 76, 151);
+        text-shadow: 0 0 3px white;
+    }
+    
+    .adopt__select__title{
+        text-align: center;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    
+    .adopt__select_button{
+        font-family: 'Grenze Gotisch', cursive;
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.3rem 0;
+        margin: 0.25rem 0;
+        font-weight: lighter;
+        border: 2px solid rgb(63, 141, 172);
+        background: white;
+        text-align: left;
+        text-indent: 1rem;
+        border-radius: 0.5rem;
+    }
+    
+    .adopt__select_button:hover{
+        cursor: pointer;
+        background: rgb(224, 133, 133);
+        color: white;
+        border: 2px solid rgb(63, 141, 172);
+    }
+    
+    .adopt__result{
+        width: 35rem;
+        height: 90%;
+        margin: 0 0.5rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        overflow: auto;
+        border-top: 5px solid red;
+        border-left: 5px solid red;
+    }
+    
+    .adopt__result__picture{
+        width: 30%;
+        height: 10rem;
+        margin: 0.5rem 0 0.5rem;
+        border: 5px solid rgb(67, 182, 163);
+    }
+    
+    .mixup {
+        width: 100%;
+        height: 39rem;
+        display: flex;
+        flex-flow: row wrap;
+        overflow: hidden;
+    }
+    
+    .mixup__picture{
+        width: 10%;
+        height: 20%;
+    
+        object-fit: cover;
+    
+    }
+    
+    .mixup__wrapper{
+        position: absolute;
+        width: 20rem;
+        height: 7rem;
+        margin-top: 16.5rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin-left: 50%;
+        left: -10rem;
+    }
+    
+    .mixup__wrapper__adoptline{
+        font-size: 2rem;
+        color: white;
+        text-shadow: 0 0 5px black;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    
+    .mixup__wrapper__a {
+        height: 40%;
+        height: 40%;
+        font-size: 1.2rem;
+        padding: 0.3rem 1rem;
+        border: 3px solid rgb(180, 63, 63);
+        background: white;
+        font-family: 'Grenze Gotisch', cursive;
+        box-shadow: 0 0 5px black;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .mixup__wrapper__a--hover:hover {
+        cursor: pointer;
+        border: 3px solid white;
+        background-color: rgb(66, 179, 66);
+        color: white;
+    }
+    
+    
+    .wave{
+        margin-top: 10rem;
+        width: 100%;
+        height: 5rem;
+    }
+    
+    .wave__path{
+        stroke: peru;
+        stroke-width: 0.1rem;
+        fill: peru;
+    }
+    
+    .about {
+        margin-top: -0.5rem;
+        background: peru;
+        color: white;
+        width: 100%;
+        height: 15rem;
+        font-size: 1.3rem;
+        text-indent: 0.5rem;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    
+    .about__creator{
+        padding-top: 0.5rem;
+        font-size: 1rem;
+    }
+    
+    .about__say{
+        font-size: 1rem;
+    }
+    
+    .about__findme{
+        font-size: 1rem;
+    }
+    
+    .about__social__a {
+        color: white;
+        text-decoration: none;
+        
+    }
+    
+    .about__social__a__icons{
+        font-size: 3rem;
+        margin-left : -0.4rem;
+    }
+    
+    .about__social__a__icons--hover{
+        transition: all 1s ease;
+    }
+    
+    .about__social__a__icons--hover:hover{
+        transform: rotate(-10deg);
+    }
+    
+    .about__resource{
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    
+    .about__api{
+        font-size: .9rem;
+    }
+    
+    .about__image{
+        font-size: .9rem;
+    }
+}

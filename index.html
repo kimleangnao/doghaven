@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Haven</title>
+    <link rel="icon" href="./images/dog-icon.ico" />
+    <link rel="stylesheet" href="./index.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="nav nav--absolute">
+        <div class="nav__about">
+            <a class="nav__about__a nav__about__a--hover" href="#about"><i class="fas fa-info-circle"></i></a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="./images/dog_1.jpg" class="banner__card" alt="dog" />
+        <img src="./images/dog_4.jpg" class="banner__card" alt="dog" />
+        <img src="./images/dog_3.jpg" class="banner__card" alt="dog" />
+        <img src="./images/dog_7.jpg" class="banner__card banner__card__hideless1024px" alt="dog" />
+        <h1 class='banner__title banner__title--white banner__title--absolute'>Dog's Haven</h1>
+    </div>
+
+    <section class="adopt">
+        <div class="adopt__select">
+            <div class="adopt__select__wrapper">
+                <img src="./images/dog_5.jpg" alt="" class="adopt__select__wrapper__banner" />
+                <p class="adopt__select__wrapper__text">Find a breed that suite you</p>
+            </div>
+            <p class="adopt__select__title">Breeds</p>
+            <button class="adopt__select_button adopt__select__js__mastiff">Mastiff</button>
+            <button class="adopt__select_button adopt__select__js__affenpinscher">Affenpinscher</button>
+            <button class="adopt__select_button adopt__select__js__corgi">Corgi</button>
+            <button class="adopt__select_button adopt__select__js__elkhound">Elkhound</button>
+            <button class="adopt__select_button adopt__select__js__husky">Husky</button>
+            <button class="adopt__select_button adopt__select__js__mountainswiss">Mountain</button>
+            <button class="adopt__select_button adopt__select__js__akita">Akita</button>
+            <button class="adopt__select_button adopt__select__js__shiba">Shiba</button>
+            <button class="adopt__select_button adopt__select__js__stbernard">St. Bernard</button>
+        </div>
+        <div class="adopt__result">
+        </div>
+    </section>
+    <div class="mixup">
+        <!-- to be add from js -->
+        <div class="mixup__wrapper">
+            <p class="mixup__wrapper__adoptline">Aren't they cute?</p> 
+            <a href="https://www.petfinder.com/search/dogs-for-adoption/us/ca/san-jose/" rel="noopener" target="_blank" class="mixup__wrapper__a mixup__wrapper__a--hover"> 
+                Adopt a friend
+            </a>
+        </div>
+    </div>
+    <svg class="wave">
+        <path class="wave__path" d="M0 100 L 90 80 Q 100 75 190 65 Q 250 55 450 60 Q 600 60 800 95 Q 950 125 1000 120 Q 1100 120  1300 85 Q 1500 30 1920 35 L1920 125 L 0 125Z "></path>
+    </svg>
+    <div class="about" id="about">
+        <p class="about__creator">Creator: Kimleang Nao</p>
+        <p class="about__say">Say: This is just a small fun project I made to practice api calling.</p>
+        <p class="about__findme">Find me here</p>
+        <div class="about__social">
+            <a href="https://twitter.com/Kiml3ang" rel="noopener" target="_blank" class="about__social__a "><i class="fab fa-twitter-square about__social__a__icons about__social__a__icons--hover"></i></a>
+            <a href="https://github.com/kimleangnao" rel="noopener" target="_blank" class="about__social__a "><i class="fab fa-github-square about__social__a__icons about__social__a__icons--hover"></i></a>
+        </div>
+       
+        <p class="about__resource">Resouces:</p>
+        <p class="about__api">Api: dog.ceo</p>
+        <p class="about__image">Images: google images / dog.ceo</p>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
